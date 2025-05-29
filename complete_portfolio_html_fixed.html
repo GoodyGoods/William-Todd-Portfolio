@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Todd - Cybersecurity Professional</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .header h2 {
+            color: #3498db;
+            margin: 10px 0;
+        }
+        
+        .contact-info {
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h3 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .skill-category h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .company-info {
+            color: #3498db;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .dates {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .achievements {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .achievements li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .achievements li:before {
+            content: "▶";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 10px 10px 0;
+            transition: background 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #2980b9;
+        }
+        
+        .contact-form {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .submit-btn {
+            background: #27ae60;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .submit-btn:hover {
+            background: #229954;
+        }
+        
+        .stats-dashboard {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .intelligence-note {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>WILLIAM TODD</h1>
+        <h2>Cybersecurity Engineer</h2>
+        
+        <div class="contact-info">
+            📍 Athens, Alabama | 📞 256-460-7474 | 📧 Jtodd0294@gmail.com
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <a href="#" class="download-btn" id="resumeDownload">📄 Download Resume</a>
+            <a href="#contact" class="download-btn">💬 Contact Me</a>
+        </div>
+    </div>
+    
+    <div class="intelligence-note">
+        🛡️ <strong>Security Note:</strong> This portfolio demonstrates professional web analytics capabilities. 
+        All visitor data is collected ethically and used solely for career development purposes.
+    </div>
+    
+    <div class="stats-dashboard">
+        <h3>🎯 Career Objective: Cybersecurity Excellence</h3>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" id="siteViews">Loading...</div>
+                <div>Portfolio Views</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1+</div>
+                <div>Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4+</div>
+                <div>Certifications</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">$90K</div>
+                <div>Previous Salary</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>🛡️ Professional Summary</h3>
+        <p>Experienced Cybersecurity Engineer with hands-on expertise in <strong>threat detection</strong>, <strong>vulnerability assessment</strong>, and <strong>incident response</strong>. Proven track record at SAIC conducting penetration testing, threat hunting, and implementing security automation using industry-standard tools. Strong background in NIST frameworks and Python-based security solutions.</p>
+    </div>
+
+    <div class="section">
+        <h3>⚡ Technical Arsenal</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>🔍 Security Tools</h4>
+                <p>Splunk • Wireshark • Nessus • Metasploit • Nmap • Burp Suite</p>
+            </div>
+            <div class="skill-category">
+                <h4>📋 Frameworks</h4>
+                <p>NIST Cybersecurity Framework • MITRE ATT&CK</p>
+            </div>
+            <div class="skill-category">
+                <h4>💻 Programming</h4>
+                <p>Python (Security Automation) • PowerShell • Bash Scripting</p>
+            </div>
+            <div class="skill-category">
+                <h4>🖥️ Operating Systems</h4>
+                <p>Windows (Advanced) • Linux (Advanced) • macOS (Intermediate)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>💼 Professional Experience</h3>
+        
+        <div class="experience-item">
+            <div class="job-title">🔐 CYBERSECURITY ENGINEER</div>
+            <div class="company-info">SAIC | Huntsville, AL</div>
+            <div class="dates">March 2024 - April 2025</div>
+            <ul class="achievements">
+                <li>Conducted <strong>penetration testing</strong> and vulnerability assessments on enterprise networks, identifying critical security gaps and providing remediation guidance</li>
+                <li>Performed proactive <strong>threat hunting</strong> using Splunk SIEM, analyzing network traffic patterns and identifying potential security incidents</li>
+                <li>Executed comprehensive network security analysis using <strong>Wireshark</strong> for packet capture and forensic investigation</li>
+                <li>Developed <strong>Python automation scripts</strong> to streamline vulnerability scanning processes and enhance threat detection capabilities</li>
+                <li>Implemented <strong>NIST Cybersecurity Framework</strong> controls, resulting in improved security posture and compliance alignment</li>
+                <li>Collaborated with cross-functional IT teams (4-5 member security division) to integrate security measures into development lifecycles</li>
+                <li>Responded to security incidents, providing rapid analysis and containment recommendations</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="job-title">📱 RETAIL SALES CONSULTANT</div>
+            <div class="company-info">Verizon | Athens, AL</div>
+            <div class="dates">April 2025 - Present</div>
+            <ul class="achievements">
+                <li>Deliver exceptional customer service while maintaining focus on cybersecurity career transition</li>
+                <li>Collaborate with team members to achieve sales targets and enhance customer satisfaction</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="job-title">🏭 PLANT MANAGER</div>
+            <div class="company-info">Filter Pro USA | Florence, AL</div>
+            <div class="dates">January 2021 - March 2024</div>
+            <ul class="achievements">
+                <li>Led operational efficiency initiatives and implemented lean manufacturing methodologies</li>
+                <li>Managed supply chain logistics and resource allocation, consistently exceeding production targets</li>
+                <li>Developed team leadership and project management skills applicable to cybersecurity environments</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="job-title">📊 RETAIL SALES MANAGER</div>
+            <div class="company-info">Sprint | Muscle Shoals, AL</div>
+            <div class="dates">March 2014 - January 2021</div>
+            <ul class="achievements">
+                <li>Managed retail operations and led teams to exceed sales targets by <strong>30%</strong></li>
+                <li>Implemented staff training programs on data privacy and security best practices</li>
+                <li>Developed customer service protocols and team management experience</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>🏆 Certifications & Education</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>🎓 Education</h4>
+                <p><strong>Bachelor of Computer Science</strong><br>
+                University of South Alabama | GPA: 3.72</p>
+            </div>
+            <div class="skill-category">
+                <h4>📜 Certifications</h4>
+                <p>• CompTIA Security+ (2023)<br>
+                • Google Cybersecurity Professional<br>
+                • Google IT Support Professional<br>
+                • OSHA 30-Hour Certification</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h3>📞 Let's Connect</h3>
+        <p>Interested in discussing cybersecurity opportunities? I'm actively seeking remote positions and consulting opportunities.</p>
+        
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- STRATEGIC TRACKING SYSTEM WITH CORRECT URL -->
+    <script>
+        // Strategic Portfolio Analytics System - FIXED WITH REAL URL
+        const TRACKING_URL = 'https://script.google.com/macros/s/AKfycbzwAkRrcOcLNKDcpuozmw9015mKi-VLunCGirrOc4Ki-Frz6e7MAN5RCURdJkpYFfKe/exec';
+        
+        // Initialize visitor intelligence gathering
+        class VisitorIntelligence {
+            constructor() {
+                this.sessionId = this.generateSessionId();
+                this.startTime = Date.now();
+                this.interactions = 0;
+                this.maxScroll = 0;
+                this.focusTime = 0;
+                this.lastFocus = Date.now();
+                this.isReturnVisitor = this.checkReturnVisitor();
+                
+                this.initializeTracking();
+            }
+            
+            generateSessionId() {
+                return 'portfolio_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+            }
+            
+            checkReturnVisitor() {
+                const hasVisited = localStorage.getItem('portfolio_visited');
+                if (!hasVisited) {
+                    localStorage.setItem('portfolio_visited', 'true');
+                    return false;
+                }
+                return true;
+            }
+            
+            getVisitorProfile() {
+                return {
+                    // Core identification
+                    ip: 'auto-detected',
+                    ua: navigator.userAgent,
+                    ref: document.referrer || 'Direct',
+                    session: this.sessionId,
+                    returnVisitor: this.isReturnVisitor.toString(),
+                    
+                    // Device intelligence
+                    screen: `${screen.width}x${screen.height}`,
+                    viewport: `${window.innerWidth}x${window.innerHeight}`,
+                    platform: navigator.platform,
+                    lang: navigator.language,
+                    tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                    
+                    // Connection analysis
+                    connection: this.getConnectionType(),
+                    loadTime: Date.now() - performance.timing.navigationStart,
+                    
+                    // Engagement metrics
+                    timeSpent: Date.now() - this.startTime,
+                    focusTime: this.focusTime + (document.hidden ? 0 : Date.now() - this.lastFocus),
+                    interactions: this.interactions,
+                    scrollDepth: this.maxScroll,
+                    
+                    // Event tracking
+                    event: 'pageview',
+                    timestamp: new Date().toISOString()
+                };
+            }
+            
+            getConnectionType() {
+                if ('connection' in navigator) {
+                    const conn = navigator.connection;
+                    return `${conn.effectiveType || 'unknown'}_${conn.downlink || 'unknown'}mbps`;
+                }
+                return 'unknown';
+            }
+            
+            trackInteraction(type, details = {}) {
+                this.interactions++;
+                
+                const data = this.getVisitorProfile();
+                data.event = type;
+                data.eventDetails = JSON.stringify(details);
+                
+                this.sendData(data);
+                console.log(`Strategic tracking: ${type}`, details);
+            }
+            
+            trackScroll() {
+                const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                if (scrollPercent > this.maxScroll) {
+                    this.maxScroll = scrollPercent;
+                    
+                    // Track engagement milestones
+                    if (scrollPercent === 25 || scrollPercent === 50 || scrollPercent === 75 || scrollPercent === 100) {
+                        this.trackInteraction('scroll_milestone', { depth: scrollPercent });
+                    }
+                }
+            }
+            
+            trackFocus() {
+                document.addEventListener('visibilitychange', () => {
+                    if (document.hidden) {
+                        this.focusTime += Date.now() - this.lastFocus;
+                    } else {
+                        this.lastFocus = Date.now();
+                    }
+                });
+            }
+            
+            sendData(data) {
+                // Method 1: Beacon API (most reliable)
+                if (navigator.sendBeacon) {
+                    navigator.sendBeacon(TRACKING_URL, JSON.stringify(data));
+                }
+                
+                // Method 2: Fetch with keepalive
+                fetch(TRACKING_URL, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    keepalive: true,
+                    headers: { 'Content-Type': 'application/json' }
+                }).catch(() => {
+                    // Method 3: Image beacon fallback
+                    const img = new Image();
+                    const params = new URLSearchParams(data);
+                    img.src = `${TRACKING_URL}?${params.toString()}`;
+                });
+            }
+            
+            initializeTracking() {
+                // Track initial visit
+                this.sendData(this.getVisitorProfile());
+                
+                // Set up event listeners
+                window.addEventListener('scroll', () => this.trackScroll());
+                document.addEventListener('click', (e) => {
+                    this.trackInteraction('click', {
+                        element: e.target.tagName,
+                        text: e.target.textContent?.substring(0, 50) || '',
+                        coordinates: `${e.clientX},${e.clientY}`
+                    });
+                });
+                
+                // Track focus/blur for engagement quality
+                this.trackFocus();
+                
+                // Periodic heartbeat
+                setInterval(() => {
+                    this.sendData(this.getVisitorProfile());
+                }, 30000);
+                
+                // Track exit
+                window.addEventListener('beforeunload', () => {
+                    const exitData = this.getVisitorProfile();
+                    exitData.event = 'page_exit';
+                    exitData.finalEngagementScore = Math.round((this.focusTime / (Date.now() - this.startTime)) * 100);
+                    this.sendData(exitData);
+                });
+                
+                console.log('Strategic portfolio analytics initialized with REAL tracking URL');
+            }
+        }
+        
+        // Initialize tracking system
+        const analytics = new VisitorIntelligence();
+        
+        // Track high-value interactions
+        document.getElementById('resumeDownload')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            analytics.trackInteraction('resume_download', {
+                source: 'portfolio_header',
+                format: 'pdf',
+                intent: 'high_value'
+            });
+            alert('Resume download tracked! (Add actual download functionality)');
+        });
+        
+        // Track contact form engagement
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            analytics.trackInteraction('contact_form_submit', {
+                intent: 'hiring_inquiry',
+                lead_quality: 'high'
+            });
+            alert('Contact submission tracked!');
+        });
+        
+        // Track external navigation
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            link.addEventListener('click', () => {
+                analytics.trackInteraction('external_link', {
+                    destination: link.href,
+                    type: 'external_navigation'
+                });
+            });
+        });
+        
+        // Update view counter
+        document.addEventListener('DOMContentLoaded', () => {
+            const viewCount = localStorage.getItem('portfolioViewCount') || 0;
+            const newCount = parseInt(viewCount) + 1;
+            localStorage.setItem('portfolioViewCount', newCount);
+            document.getElementById('siteViews').textContent = newCount;
+        });
+    </script>
+    
+    <!-- Backup tracking pixel with REAL URL -->
+    <img src="https://script.google.com/macros/s/AKfycbzwAkRrcOcLNKDcpuozmw9015mKi-VLunCGirrOc4Ki-Frz6e7MAN5RCURdJkpYFfKe/exec?method=pixel&page=portfolio&js=disabled" 
+         style="position: absolute; width: 1px; height: 1px; opacity: 0; visibility: hidden;" 
+         alt="" />
+</body>
+</html>
